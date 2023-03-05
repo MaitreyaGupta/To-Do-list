@@ -1,0 +1,28 @@
+
+<%- include("header") -%>
+<body class="Bodywala">
+<form action="/" method="post">
+    <input type="text" id="new_text_input" placeholder="name of the task" name="n">
+    <input  type="text" id="new_text_input"  placeholder="Details of the task" name="n"></input>
+    <input type="text" id="new_text_input" placeholder="Date of the task" name="n"></input> 
+    <input type="text" id="new_text_input" placeholder="Time devoted to the task" name="n"></input>
+  </input>
+    <button type="submit">submit</button>
+    </form>
+  <main> 
+    <section class="task-list"> 
+        <h2>tasks</h2>
+        <% for(var j=0;j<ni.length;j++) { %>
+          <form action="/delete",method="post">
+            <p><%= ni[j]%></p>
+            <% } %>
+            <div class="action">
+              <input name="m">
+                <button class="Delete" type=""submit>Delete</button>
+            </input> 
+              </div>
+            </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+ </body>
